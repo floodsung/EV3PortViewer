@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Ev3TableViewController.h
 //  EV3PortViewer
 //
 //  Created by FloodSurge on 7/11/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Ev3TableViewController : UITableViewController
 
 @end

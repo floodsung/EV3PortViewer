@@ -14,13 +14,32 @@
 		447023A5196FD8C0009074D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 447023A4196FD8C0009074D5 /* main.m */; };
 		447023A9196FD8C0009074D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 447023A8196FD8C0009074D5 /* AppDelegate.m */; };
 		447023AC196FD8C0009074D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447023AA196FD8C0009074D5 /* Main.storyboard */; };
-		447023AF196FD8C0009074D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 447023AE196FD8C0009074D5 /* ViewController.m */; };
 		447023B1196FD8C0009074D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447023B0196FD8C0009074D5 /* Images.xcassets */; };
 		447023B8196FD8C0009074D5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447023B7196FD8C0009074D5 /* XCTest.framework */; };
 		447023B9196FD8C0009074D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44702398196FD8BF009074D5 /* Foundation.framework */; };
 		447023BA196FD8C0009074D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4470239C196FD8BF009074D5 /* UIKit.framework */; };
 		447023C2196FD8C0009074D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 447023C0196FD8C0009074D5 /* InfoPlist.strings */; };
 		447023C4196FD8C0009074D5 /* EV3PortViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 447023C3196FD8C0009074D5 /* EV3PortViewerTests.m */; };
+		447023EA196FDD53009074D5 /* Ev3TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 447023E9196FDD53009074D5 /* Ev3TableViewController.m */; };
+		447023ED196FDDA8009074D5 /* Ev3Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 447023EC196FDDA8009074D5 /* Ev3Cell.m */; };
+		447023F6196FE18B009074D5 /* ColorSensor.png in Resources */ = {isa = PBXBuildFile; fileRef = 447023EF196FE18B009074D5 /* ColorSensor.png */; };
+		447023F7196FE18B009074D5 /* GyroSensor.png in Resources */ = {isa = PBXBuildFile; fileRef = 447023F0196FE18B009074D5 /* GyroSensor.png */; };
+		447023F8196FE18B009074D5 /* InfraredSensor.png in Resources */ = {isa = PBXBuildFile; fileRef = 447023F1196FE18B009074D5 /* InfraredSensor.png */; };
+		447023F9196FE18B009074D5 /* LargeMotor.png in Resources */ = {isa = PBXBuildFile; fileRef = 447023F2196FE18B009074D5 /* LargeMotor.png */; };
+		447023FA196FE18B009074D5 /* MediumMotor.png in Resources */ = {isa = PBXBuildFile; fileRef = 447023F3196FE18B009074D5 /* MediumMotor.png */; };
+		447023FB196FE18B009074D5 /* TouchSensor.png in Resources */ = {isa = PBXBuildFile; fileRef = 447023F4196FE18B009074D5 /* TouchSensor.png */; };
+		447023FC196FE18B009074D5 /* UltrasonicSensor.png in Resources */ = {isa = PBXBuildFile; fileRef = 447023F5196FE18B009074D5 /* UltrasonicSensor.png */; };
+		4470241B19703069009074D5 /* Unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 4470241A19703069009074D5 /* Unknown.png */; };
+		4470241E19703527009074D5 /* Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 4470241C19703527009074D5 /* Empty.png */; };
+		4470241F19703527009074D5 /* Init.png in Resources */ = {isa = PBXBuildFile; fileRef = 4470241D19703527009074D5 /* Init.png */; };
+		4470243119703A90009074D5 /* EV3Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 4470242319703A90009074D5 /* EV3Device.m */; };
+		4470243219703A90009074D5 /* EV3DirectCommander.m in Sources */ = {isa = PBXBuildFile; fileRef = 4470242519703A90009074D5 /* EV3DirectCommander.m */; };
+		4470243319703A90009074D5 /* EV3Sensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4470242819703A90009074D5 /* EV3Sensor.m */; };
+		4470243419703A90009074D5 /* EV3WifiBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4470242A19703A90009074D5 /* EV3WifiBrowserViewController.m */; };
+		4470243519703A90009074D5 /* EV3WifiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4470242C19703A90009074D5 /* EV3WifiManager.m */; };
+		4470243619703A90009074D5 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4470242E19703A90009074D5 /* GCDAsyncSocket.m */; };
+		4470243719703A90009074D5 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4470243019703A90009074D5 /* GCDAsyncUdpSocket.m */; };
+		4470243919704196009074D5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4470243819704196009074D5 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +64,43 @@
 		447023A7196FD8C0009074D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		447023A8196FD8C0009074D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		447023AB196FD8C0009074D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		447023AD196FD8C0009074D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		447023AE196FD8C0009074D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		447023B0196FD8C0009074D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		447023B6196FD8C0009074D5 /* EV3PortViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EV3PortViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		447023B7196FD8C0009074D5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		447023BF196FD8C0009074D5 /* EV3PortViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EV3PortViewerTests-Info.plist"; sourceTree = "<group>"; };
 		447023C1196FD8C0009074D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		447023C3196FD8C0009074D5 /* EV3PortViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EV3PortViewerTests.m; sourceTree = "<group>"; };
+		447023E8196FDD53009074D5 /* Ev3TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ev3TableViewController.h; sourceTree = "<group>"; };
+		447023E9196FDD53009074D5 /* Ev3TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ev3TableViewController.m; sourceTree = "<group>"; };
+		447023EB196FDDA8009074D5 /* Ev3Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ev3Cell.h; sourceTree = "<group>"; };
+		447023EC196FDDA8009074D5 /* Ev3Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ev3Cell.m; sourceTree = "<group>"; };
+		447023EF196FE18B009074D5 /* ColorSensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorSensor.png; sourceTree = "<group>"; };
+		447023F0196FE18B009074D5 /* GyroSensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GyroSensor.png; sourceTree = "<group>"; };
+		447023F1196FE18B009074D5 /* InfraredSensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfraredSensor.png; sourceTree = "<group>"; };
+		447023F2196FE18B009074D5 /* LargeMotor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LargeMotor.png; sourceTree = "<group>"; };
+		447023F3196FE18B009074D5 /* MediumMotor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MediumMotor.png; sourceTree = "<group>"; };
+		447023F4196FE18B009074D5 /* TouchSensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TouchSensor.png; sourceTree = "<group>"; };
+		447023F5196FE18B009074D5 /* UltrasonicSensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UltrasonicSensor.png; sourceTree = "<group>"; };
+		4470241A19703069009074D5 /* Unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unknown.png; sourceTree = "<group>"; };
+		4470241C19703527009074D5 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Empty.png; sourceTree = "<group>"; };
+		4470241D19703527009074D5 /* Init.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Init.png; sourceTree = "<group>"; };
+		4470242119703A90009074D5 /* EV3CommandDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3CommandDefinitions.h; sourceTree = "<group>"; };
+		4470242219703A90009074D5 /* EV3Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3Device.h; sourceTree = "<group>"; };
+		4470242319703A90009074D5 /* EV3Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EV3Device.m; sourceTree = "<group>"; };
+		4470242419703A90009074D5 /* EV3DirectCommander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3DirectCommander.h; sourceTree = "<group>"; };
+		4470242519703A90009074D5 /* EV3DirectCommander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EV3DirectCommander.m; sourceTree = "<group>"; };
+		4470242619703A90009074D5 /* EV3MessageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3MessageType.h; sourceTree = "<group>"; };
+		4470242719703A90009074D5 /* EV3Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3Sensor.h; sourceTree = "<group>"; };
+		4470242819703A90009074D5 /* EV3Sensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EV3Sensor.m; sourceTree = "<group>"; };
+		4470242919703A90009074D5 /* EV3WifiBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3WifiBrowserViewController.h; sourceTree = "<group>"; };
+		4470242A19703A90009074D5 /* EV3WifiBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EV3WifiBrowserViewController.m; sourceTree = "<group>"; };
+		4470242B19703A90009074D5 /* EV3WifiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EV3WifiManager.h; sourceTree = "<group>"; };
+		4470242C19703A90009074D5 /* EV3WifiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EV3WifiManager.m; sourceTree = "<group>"; };
+		4470242D19703A90009074D5 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4470242E19703A90009074D5 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		4470242F19703A90009074D5 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		4470243019703A90009074D5 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		4470243819704196009074D5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = EV3PortViewer/Images.xcassets/AppIcon.appiconset/icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +130,8 @@
 		4470238C196FD8BF009074D5 = {
 			isa = PBXGroup;
 			children = (
+				4470243819704196009074D5 /* icon.png */,
+				4470242019703A90009074D5 /* iOS_WiFi_EV3_Library */,
 				4470239E196FD8BF009074D5 /* EV3PortViewer */,
 				447023BD196FD8C0009074D5 /* EV3PortViewerTests */,
 				44702397196FD8BF009074D5 /* Frameworks */,
@@ -115,8 +165,10 @@
 				447023A7196FD8C0009074D5 /* AppDelegate.h */,
 				447023A8196FD8C0009074D5 /* AppDelegate.m */,
 				447023AA196FD8C0009074D5 /* Main.storyboard */,
-				447023AD196FD8C0009074D5 /* ViewController.h */,
-				447023AE196FD8C0009074D5 /* ViewController.m */,
+				447023E8196FDD53009074D5 /* Ev3TableViewController.h */,
+				447023E9196FDD53009074D5 /* Ev3TableViewController.m */,
+				447023EB196FDDA8009074D5 /* Ev3Cell.h */,
+				447023EC196FDDA8009074D5 /* Ev3Cell.m */,
 				447023B0196FD8C0009074D5 /* Images.xcassets */,
 				4470239F196FD8C0009074D5 /* Supporting Files */,
 			);
@@ -150,6 +202,48 @@
 				447023C0196FD8C0009074D5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		447023EE196FE18B009074D5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4470241C19703527009074D5 /* Empty.png */,
+				4470241D19703527009074D5 /* Init.png */,
+				4470241A19703069009074D5 /* Unknown.png */,
+				447023EF196FE18B009074D5 /* ColorSensor.png */,
+				447023F0196FE18B009074D5 /* GyroSensor.png */,
+				447023F1196FE18B009074D5 /* InfraredSensor.png */,
+				447023F2196FE18B009074D5 /* LargeMotor.png */,
+				447023F3196FE18B009074D5 /* MediumMotor.png */,
+				447023F4196FE18B009074D5 /* TouchSensor.png */,
+				447023F5196FE18B009074D5 /* UltrasonicSensor.png */,
+			);
+			name = Resource;
+			path = ../Resource;
+			sourceTree = "<group>";
+		};
+		4470242019703A90009074D5 /* iOS_WiFi_EV3_Library */ = {
+			isa = PBXGroup;
+			children = (
+				447023EE196FE18B009074D5 /* Resource */,
+				4470242119703A90009074D5 /* EV3CommandDefinitions.h */,
+				4470242219703A90009074D5 /* EV3Device.h */,
+				4470242319703A90009074D5 /* EV3Device.m */,
+				4470242419703A90009074D5 /* EV3DirectCommander.h */,
+				4470242519703A90009074D5 /* EV3DirectCommander.m */,
+				4470242619703A90009074D5 /* EV3MessageType.h */,
+				4470242719703A90009074D5 /* EV3Sensor.h */,
+				4470242819703A90009074D5 /* EV3Sensor.m */,
+				4470242919703A90009074D5 /* EV3WifiBrowserViewController.h */,
+				4470242A19703A90009074D5 /* EV3WifiBrowserViewController.m */,
+				4470242B19703A90009074D5 /* EV3WifiManager.h */,
+				4470242C19703A90009074D5 /* EV3WifiManager.m */,
+				4470242D19703A90009074D5 /* GCDAsyncSocket.h */,
+				4470242E19703A90009074D5 /* GCDAsyncSocket.m */,
+				4470242F19703A90009074D5 /* GCDAsyncUdpSocket.h */,
+				4470243019703A90009074D5 /* GCDAsyncUdpSocket.m */,
+			);
+			path = iOS_WiFi_EV3_Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +293,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = FloodSurge;
 				TargetAttributes = {
+					44702394196FD8BF009074D5 = {
+						DevelopmentTeam = RZGSSCAQVM;
+					};
 					447023B5196FD8C0009074D5 = {
 						TestTargetID = 44702394196FD8BF009074D5;
 					};
@@ -229,8 +326,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				447023B1196FD8C0009074D5 /* Images.xcassets in Resources */,
+				447023F7196FE18B009074D5 /* GyroSensor.png in Resources */,
+				447023F8196FE18B009074D5 /* InfraredSensor.png in Resources */,
+				4470241E19703527009074D5 /* Empty.png in Resources */,
 				447023A3196FD8C0009074D5 /* InfoPlist.strings in Resources */,
+				447023FA196FE18B009074D5 /* MediumMotor.png in Resources */,
 				447023AC196FD8C0009074D5 /* Main.storyboard in Resources */,
+				4470241B19703069009074D5 /* Unknown.png in Resources */,
+				4470243919704196009074D5 /* icon.png in Resources */,
+				447023F6196FE18B009074D5 /* ColorSensor.png in Resources */,
+				447023FC196FE18B009074D5 /* UltrasonicSensor.png in Resources */,
+				447023F9196FE18B009074D5 /* LargeMotor.png in Resources */,
+				4470241F19703527009074D5 /* Init.png in Resources */,
+				447023FB196FE18B009074D5 /* TouchSensor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +357,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				447023AF196FD8C0009074D5 /* ViewController.m in Sources */,
 				447023A9196FD8C0009074D5 /* AppDelegate.m in Sources */,
+				4470243719703A90009074D5 /* GCDAsyncUdpSocket.m in Sources */,
+				4470243419703A90009074D5 /* EV3WifiBrowserViewController.m in Sources */,
+				447023ED196FDDA8009074D5 /* Ev3Cell.m in Sources */,
+				4470243219703A90009074D5 /* EV3DirectCommander.m in Sources */,
+				4470243319703A90009074D5 /* EV3Sensor.m in Sources */,
+				4470243119703A90009074D5 /* EV3Device.m in Sources */,
+				4470243619703A90009074D5 /* GCDAsyncSocket.m in Sources */,
 				447023A5196FD8C0009074D5 /* main.m in Sources */,
+				447023EA196FDD53009074D5 /* Ev3TableViewController.m in Sources */,
+				4470243519703A90009074D5 /* EV3WifiManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +494,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EV3PortViewer/EV3PortViewer-Prefix.pch";
 				INFOPLIST_FILE = "EV3PortViewer/EV3PortViewer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +510,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EV3PortViewer/EV3PortViewer-Prefix.pch";
 				INFOPLIST_FILE = "EV3PortViewer/EV3PortViewer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +582,7 @@
 				447023C9196FD8C0009074D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		447023CA196FD8C0009074D5 /* Build configuration list for PBXNativeTarget "EV3PortViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +591,7 @@
 				447023CC196FD8C0009074D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
