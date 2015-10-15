@@ -88,6 +88,7 @@
 withFilterContext:(id)filterContext
 {
 	NSString *msg = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"MSG:%@",msg);
 	if (msg)
 	{
         NSString *serialNumber = [msg substringWithRange:NSMakeRange(14, 12)];
@@ -101,8 +102,7 @@ withFilterContext:(id)filterContext
         if (!device && host.length < 20) {
             
             EV3Device *aDevice = [[EV3Device alloc] initWithSerialNumber:serialNumber address:host tag:self.devices.count isConnected:NO];
-            
-            
+
             
             // set up TCP/IP socket
             dispatch_queue_t tcpSocketQueue = dispatch_queue_create("com.manmanlai.tcpSocketQueue", DISPATCH_QUEUE_CONCURRENT);
@@ -147,13 +147,12 @@ withFilterContext:(id)filterContext
         
     } else {
         NSLog(@"Connected");
+        
         // write data
         NSLog(@"writing...");
         NSString *unlockMsg = [NSString stringWithFormat:@"GET /target?sn=%@ VMTP1.0 Protocol: EV3",device.serialNumber];
         NSData *unlockData = [unlockMsg dataUsingEncoding:NSUTF8StringEncoding];
         [tcpSocket writeData:unlockData withTimeout:-1 tag:MESSAGE_UNLOCK];
-        
-        //[self.tcpSocket readDataToData:[GCDAsyncSocket CRLFData] withTimeout:-1 tag:0];
         
         [tcpSocket readDataWithTimeout:-1 tag:MESSAGE_UNLOCK];
         
@@ -179,16 +178,6 @@ withFilterContext:(id)filterContext
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port
 {
 	NSLog(@"socket:%p didConnectToHost:%@ port:%hu", sock, host, port);
-    
-    /*
-     [sock performBlock:^{
-     if ([sock enableBackgroundingOnSocket])
-     NSLog(@"Enabled backgrounding on socket");
-     else
-     NSLog(@"Enabling backgrounding failed!");
-     }];
-     */
-    
     
     // Configure SSL/TLS settings
     NSMutableDictionary *settings = [NSMutableDictionary dictionaryWithCapacity:3];
@@ -240,12 +229,11 @@ withFilterContext:(id)filterContext
 {
 	//NSLog(@"socket:%p connectedAddress:%@ didReadData:withTag:%ld", sock,sock.connectedHost,tag);
 	
-	//NSLog(@"Received Data:\n%@", data);
+	NSLog(@"Received Data:\n%@", data);
     
     NSString *host = sock.connectedHost;
     EV3Device *device = [self.devices objectForKey:host];
     
-    //[self.ev3WifiDataSource handleReceivedData:data withTag:tag fromDevice:device];
     [device handleReceivedData:data withTag:tag];
 	
 }

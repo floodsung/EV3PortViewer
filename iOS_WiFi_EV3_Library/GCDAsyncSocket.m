@@ -5103,10 +5103,11 @@ enum GCDAsyncSocketConfig
 	
 	dispatch_async(socketQueue, ^{ @autoreleasepool {
 		
-		LogTrace();
+        NSLog(@"write data...");
 		
 		if ((flags & kSocketStarted) && !(flags & kForbidReadsWrites))
 		{
+            NSLog(@"write d...write packet:%@",packet);
 			[writeQueue addObject:packet];
 			[self maybeDequeueWrite];
 		}
@@ -5165,13 +5166,15 @@ enum GCDAsyncSocketConfig
 **/
 - (void)maybeDequeueWrite
 {
-	LogTrace();
+    NSLog(@"maybeWrite");
 	NSAssert(dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey), @"Must be dispatched on socketQueue");
 	
 	
 	// If we're not currently processing a write AND we have an available write stream
+    NSLog(@"currentWrite:%@,flag:%d,kconnected:%d",currentWrite,flags,kConnected);
 	if ((currentWrite == nil) && (flags & kConnected))
 	{
+        NSLog(@"yes");
 		if ([writeQueue count] > 0)
 		{
 			// Dequeue the next object in the write queue
@@ -5181,7 +5184,7 @@ enum GCDAsyncSocketConfig
 			
 			if ([currentWrite isKindOfClass:[GCDAsyncSpecialPacket class]])
 			{
-				LogVerbose(@"Dequeued GCDAsyncSpecialPacket");
+				NSLog(@"Dequeued GCDAsyncSpecialPacket");
 				
 				// Attempt to start TLS
 				flags |= kStartingWriteTLS;
@@ -5191,12 +5194,13 @@ enum GCDAsyncSocketConfig
 			}
 			else
 			{
-				LogVerbose(@"Dequeued GCDAsyncWritePacket");
+				NSLog(@"Dequeued GCDAsyncWritePacket");
 				
 				// Setup write timer (if needed)
 				[self setupWriteTimerWithTimeout:currentWrite->timeout];
 				
 				// Immediately write, if possible
+                
 				[self doWriteData];
 			}
 		}

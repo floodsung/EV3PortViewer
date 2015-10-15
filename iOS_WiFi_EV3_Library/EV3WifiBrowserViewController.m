@@ -10,8 +10,7 @@
 #import "EV3WifiManager.h"
 
 @interface EV3WifiBrowserViewController ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,EV3WifiManagerDelegate>
-@property (nonatomic,strong) UITableView *tableView;
-@property (nonatomic,strong) UIBarButtonItem *doneButton;
+
 @property (nonatomic,strong) EV3WifiManager *ev3WifiManager;
  
 @end

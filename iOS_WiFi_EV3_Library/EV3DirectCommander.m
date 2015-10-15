@@ -26,9 +26,6 @@
     self = [super init];
     if (self) {
         
-        // Set BTstack delegate to receive packet
-        //[BTstackManager sharedInstance].delegate = self;
-        
         
         // Command size,this gets filled later
         buffer[0] = 0xff;

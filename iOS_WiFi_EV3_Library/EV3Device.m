@@ -75,33 +75,33 @@ NSString *const EV3DeviceConnectedNotification = @"EV3DeviceConnectedNotificatio
             
             int index = 5;
             
-            self.sensorPort1.type = bytes[index++];
-            self.sensorPort1.mode = bytes[index++];
-            self.sensorPort1.data = (short)(bytes[index++] | (bytes[index++] << 8));
+            self.sensorPort1.type = bytes[index++]; //5
+            self.sensorPort1.mode = bytes[index++];//6
+            self.sensorPort1.data = (short)(bytes[index++] | (bytes[index++] << 8));//7 8
             
-            self.sensorPort2.type = bytes[index++];
-            self.sensorPort2.mode = bytes[index++];
-            self.sensorPort2.data = (short)(bytes[index++] | (bytes[index++] << 8));
+            self.sensorPort2.type = bytes[index++];//9
+            self.sensorPort2.mode = bytes[index++];//10
+            self.sensorPort2.data = (short)(bytes[index++] | (bytes[index++] << 8));//11 12
             
-            self.sensorPort3.type = bytes[index++];
-            self.sensorPort3.mode = bytes[index++];
-            self.sensorPort3.data = (short)(bytes[index++] | (bytes[index++] << 8));
+            self.sensorPort3.type = bytes[index++];//13
+            self.sensorPort3.mode = bytes[index++];//14
+            self.sensorPort3.data = (short)(bytes[index++] | (bytes[index++] << 8));//15 16
             
-            self.sensorPort4.type = bytes[index++];
-            self.sensorPort4.mode = bytes[index++];
-            self.sensorPort4.data = (short)(bytes[index++] | (bytes[index++] << 8));
+            self.sensorPort4.type = bytes[index++];//17
+            self.sensorPort4.mode = bytes[index++];// 18
+            self.sensorPort4.data = (short)(bytes[index++] | (bytes[index++] << 8));// 19 20
             
-            self.sensorPortA.type = bytes[index++];
-            self.sensorPortA.mode = bytes[index++];
-            self.sensorPortA.data = (short)(bytes[index++] | (bytes[index++] << 8));
+            self.sensorPortA.type = bytes[index++];//21
+            self.sensorPortA.mode = bytes[index++];//22
+            self.sensorPortA.data = (short)(bytes[index++] | (bytes[index++] << 8));// 23 24
             
-            self.sensorPortB.type = bytes[index++];
-            self.sensorPortB.mode = bytes[index++];
-            self.sensorPortB.data = (short)(bytes[index++] | (bytes[index++] << 8));
+            self.sensorPortB.type = bytes[index++];// 25
+            self.sensorPortB.mode = bytes[index++];// 26
+            self.sensorPortB.data = (short)(bytes[index++] | (bytes[index++] << 8));// 27 28
             
-            self.sensorPortC.type = bytes[index++];
-            self.sensorPortC.mode = bytes[index++];
-            self.sensorPortC.data = (short)(bytes[index++] | (bytes[index++] << 8));
+            self.sensorPortC.type = bytes[index++]; // 29
+            self.sensorPortC.mode = bytes[index++];// 30
+            self.sensorPortC.data = (short)(bytes[index++] | (bytes[index++] << 8));// 31 32
             
             self.sensorPortD.type = bytes[index++];
             self.sensorPortD.mode = bytes[index++];
